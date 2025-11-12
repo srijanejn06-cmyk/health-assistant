@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>💚 Health Assistant</h1>
+
+        <!-- Category Buttons -->
+        <div class="category-buttons">
+            <button data-cat="water">💧 Water</button>
+            <button data-cat="diet">🍎 Diet</button>
+            <button data-cat="mood">😊 Mood</button>
+            <button data-cat="symptom">🤒 Symptoms</button>
+        </div>
+
+        <!-- Input Form -->
+        <form id="input-form">
+            <input type="text" id="user-input" placeholder="Type something about your health..." />
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- Output -->
+        <div id="output" class="output-box">Let's begin! 👋</div>
+
+        <!-- History -->
+        <h2>📜 Your Records</h2>
+        <div id="history"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
